@@ -44,8 +44,8 @@ https://en.bem.info/methodology/quick-start/*/
 .menu{
     display: flex;
     justify-content: space-around;
-    background-color: black
-    
+    background-color: black;
+    width: 100%;
 }
 
 .menu__header {
@@ -54,13 +54,17 @@ https://en.bem.info/methodology/quick-start/*/
 
 .menu__header h3 {
     color: #ffffff;
+    margin-top: 30px;
 }
 
+nav {
+    display: flex;
+}
 
 .menu__list {
     display: flex;
     justify-content: space-around;
-    gap: 1em;
+    gap: 10px;
 }
 
 
@@ -328,40 +332,114 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
 /* Menú */
+.menu__list {
+    display: none;
+}
 
+.menu__list#contacto {
+    display:
+}
 /*title*/
+
+.title__container {
+    gap: 5px;
+}
+
+.title__profile{
+    height: 200px;
+    width: 200px;
+    padding: 1em;
+}
+
+.title__bio{
+    font-size: 20px;
+}
 
 /*Skills*/
 
 /*Hobbies*/
 
+.skills__line, .hobbies__line{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    gap: 10px;   
+}
+
 /*Formación Académica*/
 
+.academic__courses__box {
+    height: 200px;
+}
+
 /*Experiencia Profesional*/
+
+.experiencie__box {
+    flex-direction: column;
+}
+
+.experiencie__box img {
+    width: 494px;
+    height: 240px;
+}
 
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (max-width: 425px) {
 
 /*Menu*/
 
 /*Titulo*/
-
+.title__div{
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+}
 /*Sección sobre mi*/
 
 /*Skills*/
 
 /*Hobbies*/
- 
+
+.skills__line, .hobbies__line{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    gap: 10px;   
+}
+
 /*Formación Académica*/
+
+.academic__courses__box {
+    height: 200px;
+}
 
 /*Experiencia Profesional*/
 
+.experiencie__box {
+    flex-direction: column;
+}
+
+.experiencie__box img {
+    width: 370px;
+    height: 180px;
+}
+
  /*Contacto*/
+
+.formcontato__contacto {
+    margin-left: 10px;
+}
+
+ .formcontato__boton {
+    height: 40px;
+    width: 300px;
+ }
+
 
 /*Footer*/
 
